@@ -1,0 +1,637 @@
+/*--------
+Universals
+--------*/
+
+button, input[type="button"],input[type="submit"]{
+    color: rgb(50, 50, 50);
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover{
+    background-color: rgb(15, 117, 15);
+}
+
+/*--------------
+Search your post                  
+--------------*/
+.omni-contentia{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+.postlink{
+    display: flex;
+}
+#post-searchbar{
+    display: flex;
+    min-width:400px;
+}
+.product-image-container{
+    background-color: rgb(241, 239, 239);  
+    display: flex;
+    margin-top: 5px;
+    height: 75px;
+    width: 150px; 
+    justify-content: center;
+}
+.product-link{
+    margin-left: 5px;
+}
+#input-container{
+    margin-bottom: 5px;
+    display: flex;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 239, 239);
+}
+.search-button{
+    padding: 0px;
+    border-color: black;
+    border-width: 0px;
+}
+.delete-container{
+    justify-content: end;
+}
+.delete-post{
+    display: flex;
+    height: 100%;
+}
+
+/*------------------
+Become customer form
+------------------*/
+
+#customer-registration-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+#submit-customer-post{
+    margin-top: 10px;
+}
+
+/*-----------------
+Searchfunctionality
+-----------------*/
+#itall{
+    display: flex;
+    flex-direction: column;
+}
+
+#searchfunctionality-form{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: start; 
+    position: relative;
+}
+
+.choyse-block{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    max-width: fit-content;
+}
+
+/*drop down button*/
+#search-method-button{
+    display: flex;
+    width: 210px;
+    height: 50px;
+    justify-content: center;
+}
+
+.search-method{
+    position: relative;
+    display: inline-block;
+}
+
+.search-choyses{
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.search-method:hover .search-choyses{
+    display: block;
+    display: flex;
+    width: 210px;
+    flex-direction: column;
+}
+
+/*serch for field*/
+#search-for-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#single-submit-button{
+    padding: 0px;
+    border-color: black;
+    border-width: 0px;
+}
+
+.amount-of-g{
+    width: 50px;
+}
+
+#submit-glist{
+    margin-top: 10px;
+}
+
+/*Search results*/
+
+.results-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+}
+.accountingsubmit{
+    position:absolute;
+    width: 40%;
+    z-index: 10000;
+    height: 100%;
+    opacity: 0;
+}
+.comp-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lable-named-products{
+    width: 542px;
+    justify-content: start;
+}
+
+.the-actual-lable{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.products-container{
+    display: none;
+    position: absolute;
+    right: 0%;
+    z-index: 10;
+}
+
+.company-container:hover {
+    background-color: rgba(246, 246, 246);
+    z-index: 100;
+}
+
+.company-container:hover .products-container{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-container:hover .right-data{
+    background-color: rgba(246, 246, 246, 0);
+}
+
+.the_logo_thumbnail{
+    display: flex;
+    width: 150px;
+    height: 75px;
+    overflow:hidden;
+    justify-content: center;
+}
+
+.the_logo_thumbnail img{
+    max-height: 100%;
+}
+
+.value-field{
+    position: absolute;
+    margin-top: 26px;
+}
+
+.the-product-container{
+    display: flex;
+    flex-direction: row;
+    width: 542px;
+    background-color: rgba(246, 246, 246);
+
+}
+
+.right-data{
+    display:flex;
+    flex-direction: column;
+    width: 75px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.right-data-2{
+    display:flex;
+    flex-direction: column;
+    width: 292px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.adv-img{
+    height: 40px;
+    object-fit: contain;
+}
+.number-in-stock{
+    padding-top: 15%;
+    padding-left: 4%;
+}
+
+.availability-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.the_product_thumbnail{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    background-color: rgba(246, 246, 246);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    width: 100px;
+}
+
+/*display chosen bulk price*/
+
+.display-thumbnail{
+    display: flex;
+    height: 50px;
+    width: fit-content;
+    padding: 3px;
+    padding-right: 15px;
+}
+.display-info-container{
+    display:flex;
+    min-width: 80px;
+    align-items: start;
+}
+.bottomdweller{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#total-price{
+    margin-top:5%;
+}
+.display-in-glist-c{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: start;
+    width: 37.8%;
+    border-radius: 2px;
+    background-color: rgb(249, 249, 249);
+    justify-content: space-between;
+}
+.grocery{
+    display: flex;
+    flex-direction: row;
+}
+/*---------
+Display Ads
+---------*/
+
+#total-ads-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 35px;
+    width: 310%;
+    left: -105%;
+}
+#ads-container-1{
+    display: flex;
+    flex-direction: row;
+    width: 65.777777777777%;
+    justify-content: space-between;
+    transition: 1s;
+}
+.adimage-1{
+    display: flex;
+    height: 200px;
+    width: 310.9311741px;
+    align-items: center;
+    justify-content: center;
+}
+.adimage-1 img{
+    display: inline-flex;
+    max-height: 200px;
+    max-width: 310.9311741px;
+}
+/*-------------------
+Display Customer infp
+-------------------*/
+#post-one-product{
+    display: flex;
+    flex-direction: column;
+}
+.visable-box{
+    display: flex;
+    height: 40px;
+    transition: 0.7s;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+}
+.visable-box:hover{
+    display: flex;
+    transition-delay: 0.5s;
+    height: 100px;
+}
+.box-title{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.svg-box{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.visable-box:hover .svg-box{
+    transition-delay:.5s ;
+    transform: rotate(90deg);
+}
+.profile-edit-link{
+    margin-left: 12px;
+}
+#situation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+    margin-bottom: 30px;
+}
+.post-products-box{
+    display: flex;
+    height: 40px;
+    transition: 0.7s;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+}
+.post-products-box:hover{
+    display: flex;
+    transition-delay: 0.5s;
+    height: 1100px;
+}
+.post-products-box:hover .svg-box{
+    transition-delay:.5s ;
+    transform: rotate(90deg);
+}
+.post-product-box{
+    display: flex;
+    height: 40px;
+    transition: 0.7s;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+}
+.post-product-box:hover{
+    display: flex;
+    transition-delay: 0.5s;
+    height: 200px;
+}
+.post-product-box:hover .svg-box{
+    transition-delay:.5s ;
+    transform: rotate(90deg);
+}
+#to-services-we-go{
+    margin-top:100px ;
+    margin-bottom: 100px;
+}
+
+/*-----------------------------
+Create mobil verition
+-------------------------------
+-------------------------------
+Use procent values.
+Remove unnececary content.
+Dina pixlar: 1920 * 1080.
+vw scales text to the screen. 
+Width 1vw = 1% of screen width.
+Use media queries to execute
+css when screen is certain way
+ex @media all and (max-width:
+1200px){css in here}.
+-----------------------------*/
+
+@media all and (max-width: 1000px){
+
+    /*--------
+    Universals
+    --------*/
+
+    /*------------------
+    Search functionality
+    ------------------*/
+    .right-data-2{
+        display:flex;
+        flex-direction: column;
+        width: 150px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    .right-data{
+        display:flex;
+        flex-direction: column;
+        width: 150px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    #searchfunctionality-form{
+        flex-direction: column;
+    }
+
+    #user-location{
+        display: flex;
+        min-width: 100%;
+    }
+    .choyse-block{
+        display: flex;
+        margin-right: 0%;
+        min-width: 100%;
+    }
+    .search-box{
+        min-width: 12.63%;
+    }
+    #search-for{
+        min-width: 55.79%;
+    }
+    #search-type-button{
+        min-width: 31.579%;
+    }
+    .search-method{
+        min-width: 100%;
+    }
+    #search-method-button{
+        min-width: 100%;
+    }
+    .search-method:hover .search-choyses{
+        display: block;
+        display: flex;
+        min-width: 100%;
+        flex-direction: column;
+    }
+    .the-grocery{
+        min-width: 55.79%;
+    }
+    .delete-grocery{
+        min-width: 31.579%;
+    }
+    .the-actual-lable{
+        display: none;
+    }
+    .products-container{
+        display: flex;
+        position:static;
+        right: 0%;
+        flex-direction: column;
+        min-width: 100%;
+        background-color: white;
+    }
+    .company-container:hover .products-container{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        background-color: white;
+
+    }
+    .company-container:hover .the-product-container{
+        background-color: rgba(246, 246, 246);
+    }
+    .comp-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 100%;
+    }
+    .company-container{
+        display: flex;
+        flex-direction: column;    
+        min-width: 100%;   
+    }
+    .the-product-container{
+        min-width: 100%;
+        background-color: white;
+        justify-content: space-between;
+    }
+    .lable-named-products{
+        min-width: 100%;
+    }
+    .the_product_thumbnail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        background-color: rgba(246, 246, 246, 0);
+        padding-top: 5px;
+        margin-left: 25px;
+        padding-bottom: 5px;
+        margin-right: 25px;
+        width: 100px;
+    }
+    .availability-container{
+        min-width: 118px;
+        justify-content: start;
+    }
+    .adimage-1{
+        display: flex;
+        height: 100px;
+        width: 16.19433198%;
+        align-items: center;
+        justify-content: center;
+    }
+    .adimage-1 img{
+        display: inline-flex;
+        max-height: 100px;
+        max-width: 80%;
+    }
+    .display-in-glist-c{
+        display: none;
+    }
+
+    /*--------------
+    Search your post                
+    --------------*/
+
+    .omni-contentia{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .postlink{
+        display: flex;
+    }
+    #post-searchbar{
+        display: flex;
+        min-width:89.5%;
+    }
+    .product-image-container{
+        background-color: rgb(241, 239, 239);  
+        display: flex;
+        margin-top: 5px;
+        height: 75px;
+        width: 150px; 
+        justify-content: center;
+    }
+    .product-link{
+        margin-left: 5px;
+    }
+    #input-container{
+        margin-bottom: 5px;
+        display: flex;
+    }
+    .search-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(241, 239, 239);
+    }
+    .search-button{
+        padding: 0px;
+        border-color: black;
+        border-width: 0px;
+    }
+    .delete-container{
+        justify-content: end;
+    }
+    .delete-post{
+        display: flex;
+        height: 100%;
+    }
+
+    
+
+}
+
